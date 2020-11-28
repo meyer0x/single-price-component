@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    background: hsl(204, 43%, 93%);
+}
+
+h3 {
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+    font-size: 13px;
+    font-family: Karla, sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 90vh;
+    padding-top: 10px;
+}
+
+.component {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 65%;
+    align-content: stretch;
+    align-items: stretch;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+}
+
+.element1 {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    width: 100%;
+    height: 43%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.element2 {
+    background: hsl(179, 62%, 43%);
+    flex: 1;
+    display: flex;
+    height: 57%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.element3 {
+    background: hsl(179, 47%, 52%);
+    flex: 1;
+    border-radius: 0px 0px 7px 0px;
+    display: flex;
+    height: 57%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.element3 p {
+    font-family: Karla, sans-serif;
+    font-weight: 400;
+    color: hsl(233, 14%, 87%);
+    font-size: 11px;
+    padding-top: 4px;
+}
+
+.element2 h2 {
+    color: white;
+    font-family: Karla, sans-serif;
+    font-size: 22px;
+}
+
+.element2 h2,
+.element2.price,
+.element2 h3,
+.element2 p,
+.element3 p,
+.element3 h3 {
+    padding-left: 25px;
+}
+
+.element2 .month {
+    font-weight: 400;
+    font-family: Karla, sans-serif;
+    font-size: 12px;
+    color: hsl(220, 58%, 89%);
+}
+
+.element2 p {
+    color: white;
+    font-weight: lighter;
+    font-family: Karla, sans-serif;
+    font-size: 12px;
+    opacity: 80%;
+}
+
+.element1 h2 {
+    font-weight: 700;
+    font-family: Karla, sans-serif;
+    font-size: 18px;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 20px;
+}
+
+.element1 h4 {
+    font-weight: 700;
+    font-family: Karla, sans-serif;
+    font-size: 14px;
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 10px;
+}
+
+.element1 p {
+    font-weight: 400;
+    font-family: Karla, sans-serif;
+    font-size: 12px;
+    color: hsl(218, 22%, 67%);
+}
+
+button {
+    width: 80%;
+    margin-left: 25px;
+    background-color: hsl(71, 73%, 54%);
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    height: 20%;
+    color: white;
+    font-family: Karla, sans-serif;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .component {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .element2{
+        border-radius: 0px 0px 0px 0px;
+        flex: 1;
+    }
+    .element3{
+        border-radius: 0px 0px 7px 7px;
+        flex: 1;
+    }
+    .element1{
+        flex:1;
+    }
+    .attribution{
+        margin-top: 20px;
+    }
+
+
+}
